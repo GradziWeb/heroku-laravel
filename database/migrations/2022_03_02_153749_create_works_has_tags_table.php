@@ -15,8 +15,6 @@ class CreateWorksHasTagsTable extends Migration
     {
         Schema::create('works_has_tags', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('work_id')->index('works_has_tags_work_id_index');
-            $table->unsignedInteger('tag_id')->index('works_has_tags_tag_id_index');
             $table->timestamps();
         });
     }

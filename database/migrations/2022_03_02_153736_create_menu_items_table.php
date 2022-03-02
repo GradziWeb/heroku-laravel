@@ -27,7 +27,7 @@ class CreateMenuItemsTable extends Migration
             $table->string('route')->nullable();
             $table->text('parameters')->nullable();
             
-            $table->foreign('menu_id', 'menu_items_menu_id_foreign')->references('id')->on('menu')->onDelete('cascade');
+            $table->foreign('menu_id', 'menu_items_menu_id_foreign')->references('id')->on('menus')->onDelete('cascade');
         });
     }
 
