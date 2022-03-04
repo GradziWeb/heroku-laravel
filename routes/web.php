@@ -17,6 +17,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// MEMO: Routes home,posts,works et contact
+// mais faire avant verif sur heroku
+/*
+return view('home.index');
+})->name('home');
+
+Route::get('/posts', function () {
+    return view('posts.index');
+})->name('posts.index');
+
+Route::get('/works', function () {
+    return view('works.index');
+})->name('works.index');
+
+Route::get('/contact', function () {
+    return view('template.partials._contact');
+})->name('contact');
+*/
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

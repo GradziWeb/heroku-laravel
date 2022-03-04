@@ -9,10 +9,10 @@ use App\Models\Category;
 class Post extends Model
 {
     use HasFactory;
-    /*
+    
     //Mise en place des liens des tables par laravel
     public function category(){
         return $this->belongsTo(Category::class,'category_id');
     }
-    */
+    
 }
